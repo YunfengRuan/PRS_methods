@@ -11,7 +11,7 @@ chr=$SGE_TASK_ID
 source /broad/software/scripts/useuse
 reuse Anaconda3
 
-#Need $Base, $trait, $phi, $n_trn
+#Need $Base, $trait, $phi, $n_trn; these parameters are added in "qsub -v ..."
 
 if [ $Base == "EUR" ];
 then pop=eur
