@@ -3,24 +3,14 @@
 #$ -j y
 #$ -o $HOME
 #$ -l h_vmem=10G
-i=$(expr ${SGE_TASK_ID} - 1)
 
-# Need $
 PRSice=/stanley/huang_lab/home/Y.Ruan/Software/PRSice
 plink=/stanley/huang_lab/home/Y.Ruan/Software/plink
 
-if [ $Base == 'EUR' ]
-then pop=eur
-elif [ $Base == 'EAS' ]
-then pop=eas
-fi
-
-trait=SCZ
-
 dir=/stanley/huang_lab/home/Y.Ruan/SCZ.PRScsx/
-base=${dir}/$BASE
+base=${dir}/Base/$BASE
 Bfile=${dir}/Target/${target}
-out=${dir}/PRSice-result/${Base}_${target}-${trait}
+out=${dir}/PRSice-result/${OUT}
 
 
 $PRSice \
