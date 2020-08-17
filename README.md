@@ -1,4 +1,4 @@
-Note: All the following script are using 1000 Genome downloaded from https://ctg.cncr.nl/software/magma as LD preference data
+Note: All the following script are using 1000 Genome downloaded from https://ctg.cncr.nl/software/magma as LD preference data  
 Scroll down; the download links are at the end of the page.
 
 The script is used for "qsub -v ...script.sh " command. Please adjust accordingly if you run it on interactive sessions. 
