@@ -5,6 +5,7 @@
 #$ -l h_vmem=10G
 i=$(expr ${SGE_TASK_ID} - 1)
 
+# Need $
 PRSice=/stanley/huang_lab/home/Y.Ruan/Software/PRSice
 plink=/stanley/huang_lab/home/Y.Ruan/Software/plink
 
@@ -17,9 +18,9 @@ fi
 trait=SCZ
 
 dir=/stanley/huang_lab/home/Y.Ruan/SCZ.PRScsx/
-base=${dir}/Base/PRScs-${Base}.${cohort}-${trait}.txt
+base=${dir}/$BASE
 Bfile=${dir}/Target/${target}
-out=${dir}/PRSice-result/${Base}.${cohort}_${target}-${trait}
+out=${dir}/PRSice-result/${Base}_${target}-${trait}
 
 
 $PRSice \
