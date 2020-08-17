@@ -13,7 +13,7 @@ reuse .gcc-5.2.0
 reuse Python-3.6
 reuse Anaconda3
 
-## Need $Base, $basefile, $cohort, ${n_trn}, $target
+## Need $Base, $basefile, $cohort, ${n_trn}, $target ; these parameters are added in "qsub -v ..." 
 
 if [ $Base == 'EUR' ]
 then 
