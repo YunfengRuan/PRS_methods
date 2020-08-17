@@ -11,7 +11,7 @@ chr=$SGE_TASK_ID
 source /broad/software/scripts/useuse
 reuse Anaconda
 
-#Need $cohort, $phi, $n_trn2, $target
+#Need $cohort, $phi, $n_trn2, $target; these parameters are added in "qsub -v ..."
 trait=SCZ
 
 dir=/stanley/huang_lab/home/Y.Ruan/SCZ.PRScsx/
