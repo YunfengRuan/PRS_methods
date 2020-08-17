@@ -1,7 +1,8 @@
 Note: All the following script are using 1000 Genome downloaded from https://ctg.cncr.nl/software/magma as LD preference data  
-Scroll down; the download links are at the end of the page.
+_Scroll down, the download links are at the end of the page._
 
-All the script are used for "qsub -v ...script.sh " command. Please adjust accordingly if you run it on interactive sessions or locally.
+All the script are used for "qsub -v ...script.sh " command. I still keep the paths of my server in the scripts.
+Please adjust accordingly if you run it on interactive sessions or locally.
 
 ## PRSice.pt.sh
 
