@@ -11,9 +11,8 @@ chr=$SGE_TASK_ID
 source /broad/software/scripts/useuse
 reuse Anaconda
 
-#Need $base1,$base2 $phi, $n_trn1, $n_trn2, $target; these parameters are added in "qsub -v ..."
+#Need $base1,$base2 $phi, $n_trn1, $n_trn2, $target, $OUT; these parameters are added in "qsub -v ..."
 # Assume base1 is EUR and base2 is EAS
-trait=SCZ
 
 dir=/stanley/huang_lab/home/Y.Ruan/SCZ.PRScsx/
 PRScsx=/stanley/huang_lab/home/Y.Ruan/Software/PRScsx/PRScsx.py
