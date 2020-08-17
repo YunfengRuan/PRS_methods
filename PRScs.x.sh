@@ -11,7 +11,8 @@ chr=$SGE_TASK_ID
 source /broad/software/scripts/useuse
 reuse Anaconda
 
-#Need $cohort, $phi, $n_trn2, $target; these parameters are added in "qsub -v ..."
+#Need $base1,$base2 $phi, $n_trn1, $n_trn2, $target; these parameters are added in "qsub -v ..."
+# Assume base1 is EUR and base2 is EAS
 trait=SCZ
 
 dir=/stanley/huang_lab/home/Y.Ruan/SCZ.PRScsx/
@@ -24,11 +25,11 @@ bim_prefix=$dir/Target/$target
 python $PRScsx \
  --ref_dir=${ref_dir} \
  --bim_prefix=${bim_prefix} \
- --sst_file=${dir}/Base/PRScs-EUR.pgc2-${trait}.txt,${dir}/Base/PRScs-EAS.${cohort}-${trait}.txt \
- --n_gwas=77096,${n_trn2} \
+ --sst_file=${dir}/Base/$base1,${dir}/Base/$base2 \
+ --n_gwas=${n_trn1},${n_trn2} \
  --pop=EUR,EAS \
  --chrom=${chr} \
  --phi=${phi} \
  --out_dir=${dir}/PRScsx-result \
- --out_name=EUR-EAS.${cohort}_${target}-$trait
+ --out_name=$OUT
 
