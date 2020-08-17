@@ -5,7 +5,7 @@
 #$ -l h_vmem=8G
 
 
-#Need cohort target 
+#Need cohort target; these parameters are added in "qsub -v ..."
 trait=SCZ
 dir="/stanley/huang_lab/home/Y.Ruan/SCZ.PRScsx/"
 PRSice="/stanley/huang_lab/home/Y.Ruan/Software/PRSice"
