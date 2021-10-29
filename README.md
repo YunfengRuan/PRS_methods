@@ -39,7 +39,7 @@ $plink \
 --allow-no-sex \
 --memory 20000
 
-~reads variant IDs from column 2, allele codes from column 4, and scores from column 6~
+*reads variant IDs from column 2, allele codes from column 4, and scores from column 6*
 
 
 ## To calculate the R^2 of PRS, you can use R:
