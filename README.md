@@ -53,7 +53,7 @@ Full<-glm(formula = PHENO ~ PRS + C1 + C2 + C3 , family = "binomial", data = DAT
 Adj.R2<-nagelkerke(Full, null=Null)$Pseudo.R.squared.for.model.vs.null[3]  
 ```
 
-We recommend that you calculate the liability scale R^2 if you have cohorts of different case/control ratio.
+We recommend that you calculate the liability scale R^2 (use **liability.scake.R2.R**) if you have cohorts of different case/control ratio.
 
 ### For quantitative traits:
 Here is the example code to calculate partial R2:
