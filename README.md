@@ -32,13 +32,14 @@ PRSice will print the PRS in *.all.score files
 LDpred and PRS-CS(x) will generate corrected effect size estimates. Please use plink to calculate the PRS: https://www.cog-genomics.org/plink/1.9/score
 
 Here is an example of using plink to calculate PRS
+```
 $plink \
 --score $posterior 2 4 6 sum center \
 --bfile $target \
 --out ${work_dir}/prs/${out}-phi1e${power} \
 --allow-no-sex \
 --memory 20000
-
+```
 *reads variant IDs from column 2, allele codes from column 4, and scores from column 6*
 
 
