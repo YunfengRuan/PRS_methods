@@ -21,7 +21,7 @@ LiabR2<-function(ncase, ncont, K, R20){
   mv=zv/K
   mv2=-mv*K/(1-K)
   
-  theta=mv*(P-K)/(1-K)*(mv*(P-K)/(1-K)-thd) #?? in equation (15)
+  theta=mv*(P-K)/(1-K)*(mv*(P-K)/(1-K)-thd) #theta in equation (15)
   cv=K*(1-K)/zv^2*K*(1-K)/(P*(1-P)) #C in equation (15)
   
   #observed n2
