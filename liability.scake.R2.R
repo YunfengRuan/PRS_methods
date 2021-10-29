@@ -37,4 +37,4 @@ LiabR2<-function(ncase, ncont, K, R20){
 ## the prevalence in general population is 0.02.
 ## The calculation is 
 a <- c(0.032, 0.042, 0.21, 0.059)
-liability <- LiabR2(399, 478, 0.01, a)
+liability <- LiabR2(500, 530, 0.02, a)
