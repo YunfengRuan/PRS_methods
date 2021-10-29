@@ -1,5 +1,5 @@
 library(pROC) 
-#Based on Lee et al's work A better coefficient of determination for genetic profile analysis，Genetic Epidemiology (2012）
+#Based on Lee et al's work, A better coefficient of determination for genetic profile analysis，Genetic Epidemiology (2012）
 
 LiabR2<-function(ncase, ncont, K, R20){
   #number of cases
